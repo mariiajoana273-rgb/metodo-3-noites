@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Método 3 Noites: um método simples para ajudar mães e pais a organizarem o sono do bebê com clareza e rotina.">
+    <meta name="theme-color" content="#4f46e5">
+    <link rel="canonical" href="https://metodo3noites.com.br/">
+    <title>Método 3 Noites — Organize o Sono do Seu Bebê com Clareza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 
+                        brandPink: '#ff4a8d', 
+                        brandPurple: '#6366f1', 
+                        brandIndigo: '#4f46e5', 
+                        softSlate: '#f8fafc' 
+                    },
+                    fontFamily: { 
+                        sans: ['Inter', 'sans-serif'], 
+                        headline: ['Poppins', 'sans-serif'] 
+                    },
+                    animation: {
+                        'fade-up': 'fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'pulse-soft': 'pulseSoft 2.5s ease-in-out infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-slow': 'float 8s ease-in-out infinite',
+                        'float-reverse': 'floatReverse 7s ease-in-out infinite',
+                        'bounce-chat': 'bounceChat 2s infinite'
+                    },
+                    keyframes: {
+                        fadeUp: { 
+                            '0%': {opacity:'0', transform:'translateY(30px)'}, 
+                            '100%': {opacity:'1', transform:'translateY(0)'} 
+                        },
+                        pulseSoft: { 
+                            '0%,100%': {boxShadow:'0 0 0 0 rgba(255,74,141,0.35)'}, 
+                            '50%': {boxShadow:'0 0 0 16px rgba(255,74,141,0)'} 
+                        },
+                        float: { 
+                            '0%,100%': {transform:'translateY(0px)'}, 
+                            '50%': {transform:'translateY(-18px)'} 
+                        },
+                        floatReverse: { 
+                            '0%,100%': {transform:'translateY(0px)'}, 
+                            '50%': {transform:'translateY(18px)'} 
+                        },
+                        bounceChat: { 
+                            '0%,100%': {transform:'scale(1)'}, 
+                            '50%': {transform:'scale(1.08)'} 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media (prefers-reduced-motion: reduce) { 
+            *, *::before, *::after { 
+                animation-duration: 0.01ms !important; 
+                transition-duration: 0.01ms !important; 
+            } 
+        }
+
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            overflow-x: hidden;
+            background-color: #f8fafc;
+            color: #1e293b;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        } 
+
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+
+        .fluid-hero { 
+            font-size: clamp(1.85rem, 5.5vw + 0.5rem, 4rem); 
+            line-height: 1.08; 
+            letter-spacing: -0.02em;
+        }
+        .fluid-section-title { 
+            font-size: clamp(1.6rem, 3.2vw + 0.5rem, 2.6rem); 
+            line-height: 1.15; 
+            letter-spacing: -0.01em;
+        }
+        .fluid-body { 
+            font-size: clamp(0.9375rem, 1.1vw + 0.4rem, 1.125rem); 
+            line-height: 1.75; 
+        }
+        .fluid-cta { 
+            font-size: clamp(0.8rem, 1.2vw + 0.4rem, 1.25rem); 
+        }
+
+        .hero-light { 
+            background: linear-gradient(135deg, #fdf4ff 0%, #f0f4ff 30%, #fff1f2 70%, #fdf4ff 100%); 
+            position: relative; 
+            overflow: hidden; 
+        }
+        .hero-light .blob { 
+            position: absolute; 
+            border-radius: 50%; 
+            filter: blur(80px); 
+            opacity: 0.5; 
+            will-change: transform; 
+        }
+
+        .glass-effect { 
+            background: rgba(255,255,255,0.82); 
+            backdrop-filter: blur(20px); 
+            -webkit-backdrop-filter: blur(20px); 
+            border: 1px solid rgba(255,255,255,0.6); 
+        }
+
+        .gradient-text { 
+            background: linear-gradient(135deg, #6366f1 0%, #ff4a8d 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            background-clip: text; 
+        }
+
+        .btn-premium { 
+            background: linear-gradient(135deg, #ff4a8d 0%, #f43f5e 100%); 
+            box-shadow: 0 8px 28px -4px rgba(244,63,94,0.45); 
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); 
+            position: relative; 
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-premium:hover { 
+            transform: translateY(-3px) scale(1.02); 
+            box-shadow: 0 16px 36px -4px rgba(244,63,94,0.55); 
+        }
+        .btn-premium:active { 
+            transform: translateY(-1px) scale(0.98); 
+        }
+        .btn-premium::after { 
+            content: ''; 
+            position: absolute; 
+            inset: 0; 
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 60%); 
+            opacity: 0; 
+            transition: opacity 0.3s; 
+        }
+        .btn-premium:hover::after { 
+            opacity: 1; 
+        }
+
+        .card-stable-hover { 
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); 
+        } 
+        .card-stable-hover:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 28px 48px -12px rgba(0,0,0,0.1); 
+        }
+
+        .reveal { 
+            opacity: 0; 
+            transform: translateY(30px); 
+            transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1); 
+        } 
+        .reveal.visible { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+
+        .faq-item summary { 
+            cursor: pointer; 
+            user-select: none; 
+            list-style: none; 
+        } 
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item[open] summary .faq-arrow { 
+            transform: rotate(180deg); 
+        } 
+        .faq-arrow { 
+            transition: transform 0.35s cubic-bezier(0.16,1,0.3,1); 
+        }
+
+        .emotional-pink { color: #ff4a8d; font-weight: 600; } 
+        .emotional-purple { color: #6366f1; font-weight: 600; }
+        .emotional-gradient { 
+            background: linear-gradient(135deg, #ff4a8d, #6366f1); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            font-weight: 700; 
+        }
+        .warm-accent { color: #f97316; font-weight: 700; }
+        .warm-highlight { 
+            background: linear-gradient(135deg, #f97316, #fbbf24); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            font-weight: 800; 
+        }
+
+        #scroll-progress { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            height: 3px; 
+            background: linear-gradient(90deg, #ff4a8d, #6366f1); 
+            z-index: 9999; 
+            width: 0%; 
+            transition: width 0.1s linear; 
+        }
+
+        .magnetic-btn { 
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); 
+        }
+
+        section[id] { 
+            content-visibility: auto; 
+            contain-intrinsic-size: 500px; 
+        }
+
+        #chat-widget { 
+            position: fixed; 
+            bottom: 20px; 
+            right: 20px; 
+            z-index: 9999; 
+        }
+        #chat-toggle { 
+            width: 56px; 
+            height: 56px; 
+            border-radius: 50%; 
+            background: linear-gradient(135deg, #6366f1, #ff4a8d); 
+            color: white; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            cursor: pointer; 
+            box-shadow: 0 8px 24px rgba(99,102,241,0.5); 
+            animation: bounceChat 2s infinite; 
+            border: none; 
+        }
+        #chat-box { 
+            position: absolute; 
+            bottom: 70px; 
+            right: 0; 
+            width: 320px; 
+            max-width: calc(100vw - 40px); 
+            background: white; 
+            border-radius: 20px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15); 
+            overflow: hidden; 
+            display: none; 
+            flex-direction: column; 
+        }
+        #chat-box.open { display: flex; }
+        .chat-header { 
+            background: linear-gradient(135deg, #6366f1, #ff4a8d); 
+            color: white; 
+            padding: 12px 16px; 
+            font-weight: 700; 
+            font-size: 14px; 
+            display: flex; 
+            justify-content: space-between; 
+        }
+        .chat-body { 
+            padding: 16px; 
+            max-height: 300px; 
+            overflow-y: auto; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 12px; 
+        }
+        .chat-message { 
+            padding: 10px 14px; 
+            border-radius: 18px; 
+            max-width: 85%; 
+            font-size: 13px; 
+            line-height: 1.5;
+        }
+        .chat-message.assistant { 
+            background: #f1f5f9; 
+            align-self: flex-start; 
+            border-bottom-left-radius: 4px; 
+            color: #1e293b;
+        }
+        .chat-message.user { 
+            background: #6366f1; 
+            color: white; 
+            align-self: flex-end; 
+            border-bottom-right-radius: 4px; 
+        }
+        .chat-suggestions { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 8px; 
+        }
+        .chat-suggestion { 
+            background: #f1f5f9; 
+            border: 1px solid #e2e8f0; 
+            padding: 6px 12px; 
+            border-radius: 20px; 
+            font-size: 11px; 
+            cursor: pointer; 
+            transition: all 0.2s; 
+            color: #475569;
+        }
+        .chat-suggestion:hover { 
+            background: #e2e8f0; 
+            transform: translateY(-1px); 
+        }
+        .chat-input-area { 
+            padding: 12px 16px; 
+            border-top: 1px solid #e2e8f0; 
+            display: flex; 
+            gap: 8px; 
+        }
+        .chat-input-area input { 
+            flex: 1; 
+            border: 1px solid #e2e8f0; 
+            border-radius: 20px; 
+            padding: 8px 16px; 
+            font-size: 13px;
+            color: #1e293b;
+            outline: none;
+        }
+        .chat-input-area input:focus {
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
+        }
+        .chat-input-area input::placeholder {
+            color: #94a3b8;
+        }
+        .chat-input-area button { 
+            background: #6366f1; 
+            color: white; 
+            border: none; 
+            border-radius: 50%; 
+            width: 36px; 
+            height: 36px; 
+            cursor: pointer; 
+            transition: transform 0.2s; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .chat-input-area button:hover { 
+            transform: scale(1.1); 
+        }
+
+        #sticky-cta { 
+            position: fixed; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            z-index: 100; 
+            transform: translateY(100%); 
+            transition: transform 0.4s cubic-bezier(0.16,1,0.3,1); 
+        }
+        #sticky-cta.visible { 
+            transform: translateY(0); 
+        }
+
+        .text-highlight { 
+            position: relative; 
+            display: inline; 
+        }
+        .text-highlight::after { 
+            content: ''; 
+            position: absolute; 
+            bottom: 2px; 
+            left: 0; 
+            width: 0; 
+            height: 8px; 
+            background: rgba(255, 74, 141, 0.15); 
+            border-radius: 4px; 
+            transition: width 0.6s cubic-bezier(0.16,1,0.3,1); 
+            z-index: -1; 
+        }
+        .reveal.visible .text-highlight::after { 
+            width: 100%; 
+        }
+        .text-highlight-warm::after { 
+            background: rgba(249, 115, 22, 0.15); 
+        }
+
+        .blur-reveal { 
+            opacity: 0; 
+            filter: blur(10px); 
+            transform: translateY(20px); 
+            transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), filter 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); 
+        }
+        .blur-reveal.visible { 
+            opacity: 1; 
+            filter: blur(0); 
+            transform: translateY(0); 
+        }
+
+        .offer-pulse { 
+            position: relative; 
+        }
+        .offer-pulse::before { 
+            content: ''; 
+            position: absolute; 
+            inset: -4px; 
+            border-radius: inherit; 
+            border: 2px solid rgba(255,74,141,0.3); 
+            animation: pulseRing 2s ease-out infinite; 
+        }
+        @keyframes pulseRing { 
+            0% { transform: scale(1); opacity: 1; } 
+            100% { transform: scale(1.08); opacity: 0; } 
+        }
+
+        .check-item { 
+            transition: all 0.3s cubic-bezier(0.16,1,0.3,1); 
+        }
+        .check-item:hover { 
+            transform: translateX(4px); 
+        }
+
+        .mockup-float { 
+            animation: mockupFloat 5s ease-in-out infinite; 
+        }
+        @keyframes mockupFloat { 
+            0%,100% { transform: translateY(0) rotate(-2deg); } 
+            50% { transform: translateY(-12px) rotate(2deg); } 
+        }
+
+        /* Mobile-first responsive improvements */
+        @media (max-width: 640px) {
+            .hero-light { 
+                padding-top: 6rem; 
+                padding-bottom: 3rem; 
+            }
+            .glass-effect { 
+                padding-left: 1rem; 
+                padding-right: 1rem; 
+            }
+            .btn-premium { 
+                padding-left: 1.25rem; 
+                padding-right: 1.25rem; 
+                padding-top: 0.875rem; 
+                padding-bottom: 0.875rem;
+                width: 100%;
+            }
+            #chat-widget { 
+                bottom: 80px; 
+                right: 12px;
+            }
+            #chat-box {
+                right: -8px;
+                width: calc(100vw - 40px);
+                max-width: 340px;
+            }
+            section {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+            .max-w-6xl, .max-w-4xl, .max-w-3xl, .max-w-2xl, .max-w-xl {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+
+        @media (max-width: 430px) {
+            .hero-light { 
+                padding-top: 5.5rem; 
+                padding-bottom: 2.5rem; 
+            }
+            .glass-effect { 
+                padding-left: 0.75rem; 
+                padding-right: 0.75rem; 
+            }
+            .btn-premium { 
+                padding-left: 1rem; 
+                padding-right: 1rem; 
+                padding-top: 0.75rem; 
+                padding-bottom: 0.75rem;
+                font-size: 0.75rem;
+            }
+            .fluid-hero {
+                font-size: clamp(1.6rem, 6vw, 2.2rem);
+            }
+            .fluid-section-title {
+                font-size: clamp(1.4rem, 5vw, 1.9rem);
+            }
+        }
+
+        @media (max-width: 360px) {
+            .hero-light { 
+                padding-top: 5rem; 
+            }
+            .glass-effect { 
+                padding-left: 0.5rem; 
+                padding-right: 0.5rem; 
+            }
+            .fluid-hero {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Ensure no horizontal scroll */
+        html, body {
+            overflow-x: hidden;
+            max-width: 100vw;
+        }
+
+        img, video, iframe, svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Improved touch targets on mobile */
+        @media (pointer: coarse) {
+            .btn-premium, 
+            .chat-suggestion,
+            .chat-input-area button,
+            #chat-toggle {
+                min-height: 44px;
+                min-width: 44px;
+            }
+            nav a, 
+            .faq-item summary {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        /* Subtle parallax for blobs */
+        @media (min-width: 768px) {
+            .blob {
+                transition: transform 0.1s linear;
+            }
+        }
+
+        /* Improved focus states for accessibility */
+        a:focus-visible,
+        button:focus-visible,
+        summary:focus-visible,
+        input:focus-visible {
+            outline: 2px solid #6366f1;
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
+        /* Smooth scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+<base target="_blank">
+<base target="_blank">
+</head>
+<body class="bg-softSlate text-slate-800 antialiased">
+    <div id="scroll-progress"></div>
+
+    <a href="#cena" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brandIndigo text-white px-4 py-2 rounded-full z-[9999]">Pular para o conteúdo</a>
+
+    <header class="fixed top-0 w-full z-50 px-3 sm:px-4 py-3 sm:py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass-effect px-4 sm:px-6 py-3 rounded-full shadow-sm reveal">
+            <div class="text-lg sm:text-xl font-headline font-bold gradient-text">Método 3 Noites</div>
+            <nav class="hidden md:flex gap-6 lg:gap-8 font-medium text-slate-600 text-sm">
+                <a href="#cena" class="hover:text-brandPink transition-colors duration-200">A Cena</a>
+                <a href="#problema" class="hover:text-brandPink transition-colors duration-200">O Problema</a>
+                <a href="#metodo" class="hover:text-brandPink transition-colors duration-200">O Método</a>
+                <a href="#oferta" class="hover:text-brandPink transition-colors duration-200">Oferta</a>
+            </nav>
+            <a href="https://pay.hotmart.com/T102675859T?off=kuxbavmx" class="btn-premium text-white px-4 sm:px-6 py-2.5 rounded-full font-bold text-[10px] sm:text-xs uppercase tracking-wide magnetic-btn">Quero Acesso</a>
+        </div>
+    </header>
+
+    <section class="hero-light relative pt-28 sm:pt-32 md:pt-40 pb-16 sm:pb-20 md:pb-24 px-4 overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none overflow-hidden">
+            <div class="blob w-72 h-72 sm:w-96 sm:h-96 bg-purple-300/40 -top-20 -left-20 animate-float" data-speed="0.03"></div>
+            <div class="blob w-64 h-64 sm:w-80 sm:h-80 bg-pink-300/40 -bottom-10 -right-10 animate-float-slow" style="animation-delay: 1s;" data-speed="0.02"></div>
+            <div class="blob w-48 h-48 sm:w-64 sm:h-64 bg-blue-200/40 top-1/2 left-1/2 animate-float-reverse" style="animation-delay: 2s;" data-speed="0.04"></div>
+        </div>
+        <div class="max-w-4xl mx-auto text-center relative z-10 space-y-6 sm:space-y-8">
+            <div class="reveal">
+                <p class="text-brandPurple font-semibold text-xs sm:text-sm uppercase tracking-[0.2em] mb-4">Método digital • Acesso imediato</p>
+                <h1 class="font-headline fluid-hero font-black text-slate-900 leading-tight">
+                    Seu <span class="warm-highlight text-highlight text-highlight-warm">bebê</span> acorda várias vezes durante a noite?
+                </h1>
+            </div>
+            <div class="reveal reveal-delay-1">
+                <p class="font-headline text-xl sm:text-2xl md:text-3xl font-bold text-slate-700 mt-4">
+                    E se o <span class="warm-highlight text-highlight text-highlight-warm">problema</span> não fosse o seu bebê...
+                </p>
+            </div>
+            <div class="reveal reveal-delay-2">
+                <p class="font-headline text-lg sm:text-xl md:text-2xl font-semibold text-slate-600 mt-2">
+                    E sim a falta de uma <span class="emotional-gradient text-highlight">rotina clara</span> para o <span class="emotional-gradient text-highlight">sono</span>?
+                </p>
+            </div>
+            <p class="fluid-body text-slate-600 max-w-2xl mx-auto reveal reveal-delay-2">
+                Um método simples para ajudar mães e pais a organizarem o sono do bebê sem adivinhações, sem tentar uma técnica diferente toda semana e sem passar horas procurando respostas na internet.
+            </p>
+            <div class="pt-4 sm:pt-6 reveal reveal-delay-3">
+                <a href="https://pay.hotmart.com/T102675859T?off=kuxbavmx" class="btn-premium text-white px-6 sm:px-10 py-4 sm:py-5 rounded-2xl font-bold fluid-cta uppercase tracking-wide inline-block max-w-full break-words animate-pulse-soft magnetic-btn">
+                    QUERO ORGANIZAR O SONO DO MEU BEBÊ
+                </a>
+            </div>
+            <div class="flex flex-wrap gap-3 sm:gap-4 justify-center text-xs sm:text-sm text-slate-600 reveal reveal-delay-4">
+                <span class="flex items-center gap-1.5 sm:gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 flex-shrink-0"></i> Acesso Vitalício</span>
+                <span class="flex items-center gap-1.5 sm:gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 flex-shrink-0"></i> Entrega Digital</span>
+                <span class="flex items-center gap-1.5 sm:gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-500 flex-shrink-0"></i> Pagamento Seguro</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="cena" class="py-16 sm:py-20 md:py-28 px-4 bg-white overflow-hidden">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="font-headline fluid-section-title font-bold text-slate-900 mb-4 reveal">
+                Talvez você conheça essa <span class="emotional-gradient">cena</span>...
+            </h2>
+            <div class="space-y-6 sm:space-y-8 mt-8 sm:mt-12 text-left">
+                <div class="reveal blur-reveal">
+                    <p class="fluid-body text-slate-600 leading-relaxed">
+                        São 2h da manhã. Você acorda pela terceira vez. O bebê está agitado, e você já não sabe mais o que fazer para ele voltar a dormir.
+                    </p>
+                </div>
+                <div class="reveal blur-reveal reveal-delay-1">
+                    <p class="fluid-body text-slate-600 leading-relaxed">
+                        Você tenta de tudo: amamentar, embalar, cantar, colocar no berço, tirar do berço. Cada noite é um <span class="emotional-pink">labirinto de tentativas</span> que nunca parecem funcionar da mesma forma.
+                    </p>
+                </div>
+                <div class="reveal blur-reveal reveal-delay-2">
+                    <p class="fluid-body text-slate-600 leading-relaxed">
+                        No dia seguinte, você está <span class="emotional-purple">exausta</span>. Tenta buscar uma solução no celular, mas encontra dez opiniões diferentes. Uma diz para deixar chorar. Outra diz que nunca se deve deixar chorar. Uma terceira sugere um ritual completamente diferente do que você leu ontem.
+                    </p>
+                </div>
+                <div class="reveal blur-reveal reveal-delay-3">
+                    <p class="fluid-body text-slate-600 leading-relaxed">
+                        E assim passam as semanas. As noites se misturam. O cansaço se acumula. E a sensação de <span class="emotional-pink">estar perdida</span> só cresce.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="problema" class="py-16 sm:py-20 md:py-28 px-4 bg-gradient-to-b from-white to-slate-50 overflow-hidden">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="font-headline fluid-section-title font-bold text-slate-900 mb-4 reveal">
+                O verdadeiro problema não é apenas o <span class="emotional-gradient">cansaço</span>.
+            </h2>
+            <p class="text-slate-600 max-w-2xl mx-auto mb-12 sm:mb-16 fluid-body reveal">
+                É a sensação de não ter direção. De não saber o que fazer a seguir. De sentir que você já tentou de tudo e nada parece ter uma lógica clara.
+            </p>
+            <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
+                <article class="card-stable-hover p-6 sm:p-8 rounded-3xl bg-rose-50 border border-rose-100 text-left reveal">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 bg-rose-100 text-rose-500 rounded-2xl flex items-center justify-center mb-5 sm:mb-6">
+                        <i data-lucide="heart-crack" class="w-6 h-6 sm:w-7 sm:h-7"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3 text-rose-900">Você se sente <span class="emotional-pink">cansada</span></h3>
+                    <p class="text-rose-700/70 text-sm sm:text-base leading-relaxed">Não apenas fisicamente, mas mentalmente. A exaustão constante tira sua capacidade de aproveitar os momentos mais simples com seu bebê.</p>
+                </article>
+                <article class="card-stable-hover p-6 sm:p-8 rounded-3xl bg-indigo-50 border border-indigo-100 text-left reveal reveal-delay-1">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-100 text-indigo-500 rounded-2xl flex items-center justify-center mb-5 sm:mb-6">
+                        <i data-lucide="compass" class="w-6 h-6 sm:w-7 sm:h-7"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3 text-indigo-900">Você se sente <span class="emotional-purple">perdida</span></h3>
+                    <p class="text-indigo-700/70 text-sm sm:text-base leading-relaxed">Toda noite é uma incógnita. Você não tem um plano, apenas reage ao que acontece. E isso gera uma ansiedade silenciosa que não some nem durante o dia.</p>
+                </article>
+                <article class="card-stable-hover p-6 sm:p-8 rounded-3xl bg-amber-50 border border-amber-100 text-left reveal reveal-delay-2">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 bg-amber-100 text-amber-500 rounded-2xl flex items-center justify-center mb-5 sm:mb-6">
+                        <i data-lucide="help-circle" class="w-6 h-6 sm:w-7 sm:h-7"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3 text-amber-900">Você tem <span class="warm-accent">dúvidas</span></h3>
+                    <p class="text-amber-700/70 text-sm sm:text-base leading-relaxed">Será que estou fazendo certo? Será que isso vai passar sozinho? Será que existe algo que eu ainda não tentei? As dúvidas ecoam mais alto quando você está sozinha às 3h da manhã.</p>
+                </article>
+            </div>
+            <div class="mt-12 sm:mt-16 reveal">
+                <p class="fluid-body text-slate-600 max-w-xl mx-auto mb-6">
+                    E no fundo, você se sente <span class="emotional-pink">sozinha</span> nisso. Porque ninguém vive a sua noite. Ninguém sente a sua exaustão. E ninguém oferece uma resposta que realmente faça sentido para a sua realidade.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 sm:py-20 md:py-28 px-4 bg-white overflow-hidden">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="font-headline fluid-section-title font-bold text-slate-900 mb-3 reveal">
+                Talvez você não precise de mais uma <span class="emotional-gradient">técnica</span>.
+            </h2>
+            <p class="font-headline text-xl sm:text-2xl md:text-3xl font-semibold text-slate-600 mt-4 reveal reveal-delay-1">
+                Talvez precise apenas de um <span class="warm-highlight">plano</span>.
+            </p>
+            <div class="mt-10 sm:mt-14 space-y-6 sm:space-y-8 text-left">
+                <div class="reveal blur-reveal">
+                    <p class="fluid-body text-slate-600 leading-relaxed">
+                        A verdade é que a internet está cheia de técnicas. Cada uma promete ser a solução mágica. Mas técnicas isoladas, sem uma estrutura, sem uma sequência, sem um contexto, raramente funcionam de forma consistente.
+                    </p>
+                </div>
+                <div class="reveal blur-reveal reveal-delay-1">
+                    <p class="fluid-body text-slate-600 leading-relaxed">
+                        O que faz a diferença não é tentar mais uma coisa. É ter <span class="emotional-purple">clareza</span> sobre o que fazer, quando fazer e por que fazer. É ter um <span class="emotional-pink">processo</span> que você possa seguir com confiança, mesmo nas noites mais difíceis.
+                    </p>
+                </div>
+                <div class="reveal blur-reveal reveal-delay-2">
+                    <p class="fluid-body text-slate-600 leading-relaxed">
+                        Quando você tem um plano, a incerteza diminui. A ansiedade perde força. E você volta a se sentir no <span class="warm-highlight">controle</span> — não porque controla cada minuto do sono do bebê, mas porque sabe exatamente qual é o próximo passo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="metodo" class="py-16 sm:py-20 md:py-28 px-4 bg-softSlate overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-10 sm:gap-12 items-center">
+                <div class="text-center md:text-left reveal">
+                    <p class="text-brandPurple font-semibold text-xs sm:text-sm uppercase tracking-[0.2em] mb-3">Apresentamos</p>
+                    <h2 class="font-headline fluid-section-title font-bold text-slate-900 mb-4">
+                        Conheça o <span class="emotional-gradient">Método 3 Noites</span>
+                    </h2>
+                    <p class="fluid-body text-slate-600 leading-relaxed mb-6">
+                        Um guia digital completo, desenvolvido para oferecer exatamente o que falta na maioria das abordagens: uma <span class="emotional-purple">sequência lógica</span>, um <span class="emotional-pink">passo a passo claro</span> e uma <span class="warm-highlight">rotina organizada</span> que você pode adaptar à realidade da sua família.
+                    </p>
+                    <p class="fluid-body text-slate-600 leading-relaxed mb-8">
+                        Não é sobre promessas milagrosas. É sobre organização. É sobre dar a você as ferramentas para criar uma rotina de sono que funcione, com calma e consistência.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                        <a href="https://pay.hotmart.com/T102675859T?off=kuxbavmx" class="btn-premium text-white px-6 sm:px-8 py-4 rounded-2xl font-bold text-sm sm:text-base uppercase tracking-wide text-center magnetic-btn">
+                            Quero Conhecer o Método
+                        </a>
+                    </div>
+                </div>
+                <div class="relative flex justify-center reveal reveal-delay-1">
+                    <div class="mockup-float relative">
+                        <div class="w-64 h-80 sm:w-72 sm:h-96 bg-white rounded-3xl shadow-2xl border border-slate-200 p-6 sm:p-8 flex flex-col justify-between">
+                            <div>
+                                <div class="w-10 h-10 bg-gradient-to-br from-brandPurple to-brandPink rounded-xl flex items-center justify-center mb-4">
+                                    <i data-lucide="moon" class="w-5 h-5 text-white"></i>
+                                </div>
+                                <h3 class="font-headline text-lg sm:text-xl font-bold text-slate-900 mb-2">Método 3 Noites</h3>
+                                <p class="text-xs sm:text-sm text-slate-600">Guia digital completo para organizar o sono do seu bebê com clareza e rotina.</p>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2 text-xs text-slate-600">
+                                    <i data-lucide="check" class="w-3.5 h-3.5 text-brandPink"></i>
+                                    <span>Passo a passo organizado</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs text-slate-600">
+                                    <i data-lucide="check" class="w-3.5 h-3.5 text-brandPink"></i>
+                                    <span>Checklists práticos</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs text-slate-600">
+                                    <i data-lucide="check" class="w-3.5 h-3.5 text-brandPink"></i>
+                                    <span>Acesso imediato</span>
+                                </div>
+                            </div>
+                            <div class="pt-3 border-t border-slate-100">
+                                <span class="text-[10px] uppercase tracking-wider text-slate-400">Formato</span>
+                                <p class="text-sm font-semibold text-slate-700">PDF + Checklists + Planner</p>
+                            </div>
+                        </div>
+                        <div class="absolute -top-4 -right-4 w-16 h-16 bg-brandPink/10 rounded-full blur-xl"></div>
+                        <div class="absolute -bottom-4 -left-4 w-20 h-20 bg-brandPurple/10 rounded-full blur-xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 sm:py-20 md:py-28 px-4 bg-white overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-10 sm:mb-16 reveal">
+                <h2 class="font-headline fluid-section-title font-bold text-slate-900 mb-3">
+                    O que você <span class="emotional-gradient">recebe</span>
+                </h2>
+                <p class="fluid-body text-slate-600 max-w-xl mx-auto">Material completo, organizado e pronto para ser usado desde o primeiro dia.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+                <div class="card-stable-hover p-6 sm:p-8 rounded-3xl bg-slate-50 border border-slate-100 text-left reveal">
+                    <div class="w-12 h-12 bg-brandPurple/10 text-brandPurple rounded-2xl flex items-center justify-center mb-5">
+                        <i data-lucide="book-open" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base sm:text-lg mb-2">Guia Principal</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">O método completo com estratégias e passos para ajudar seu bebê a desenvolver hábitos de sono mais saudáveis.</p>
+                </div>
+                <div class="card-stable-hover p-6 sm:p-8 rounded-3xl bg-slate-50 border border-slate-100 text-left reveal reveal-delay-1">
+                    <div class="w-12 h-12 bg-brandPink/10 text-brandPink rounded-2xl flex items-center justify-center mb-5">
+                        <i data-lucide="moon" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base sm:text-lg mb-2">Guia da Madrugada</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Aprenda exatamente o que fazer nos primeiros minutos após o despertar noturno. Descubra como acalmar seu bebê sem desespero e criar condições para que ele volte a dormir com mais facilidade.</p>
+                </div>
+                <div class="card-stable-hover p-6 sm:p-8 rounded-3xl bg-slate-50 border border-slate-100 text-left reveal reveal-delay-2">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-500 rounded-2xl flex items-center justify-center mb-5">
+                        <i data-lucide="apple" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base sm:text-lg mb-2">Guia de Nutrição Noturna</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Descubra como a alimentação pode influenciar diretamente a qualidade do sono do seu bebê.</p>
+                </div>
+                <div class="card-stable-hover p-6 sm:p-8 rounded-3xl bg-slate-50 border border-slate-100 text-left reveal">
+                    <div class="w-12 h-12 bg-emerald-500/10 text-emerald-500 rounded-2xl flex items-center justify-center mb-5">
+                        <i data-lucide="home" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base sm:text-lg mb-2">Checklist do Ambiente Ideal</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Um guia prático para transformar o quarto do seu bebê em um ambiente favorável ao descanso.</p>
+                </div>
+                <div class="card-stable-hover p-6 sm:p-8 rounded-3xl bg-slate-50 border border-slate-100 text-left reveal reveal-delay-1">
+                    <div class="w-12 h-12 bg-rose-500/10 text-rose-500 rounded-2xl flex items-center justify-center mb-5">
+                        <i data-lucide="calendar-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base sm:text-lg mb-2">Planner de Sono do Bebê</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Acompanhe a rotina do seu bebê de forma simples e organizada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 sm:py-20 md:py-28 px-4 bg-softSlate overflow-hidden">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10 sm:mb-16 reveal">
+                <h2 class="font-headline fluid-section-title font-bold text-slate-900 mb-3">
+                    Para quem é o <span class="emotional-gradient">Método 3 Noites</span>?
+                </h2>
+                <p class="fluid-body text-slate-600 max-w-xl mx-auto">Este método foi pensado para pais e mães que precisam de organização, não de promessas.</p>
+            </div>
+            <div class="space-y-4 sm:space-y-5 max-w-2xl mx-auto">
+                <div class="check-item flex items-start gap-4 p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 reveal">
+                    <div class="w-8 h-8 bg-brandPurple/10 text-brandPurple rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <i data-lucide="check" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-slate-800 text-sm sm:text-base">Mães e pais que se sentem perdidos com tantas informações contraditórias</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm mt-1">Se você já leu dez artigos diferentes e cada um dizia uma coisa, aqui você encontra uma única direção clara.</p>
+                    </div>
+                </div>
+                <div class="check-item flex items-start gap-4 p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 reveal reveal-delay-1">
+                    <div class="w-8 h-8 bg-brandPink/10 text-brandPink rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <i data-lucide="check" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-slate-800 text-sm sm:text-base">Quem quer uma rotina organizada, mas não sabe por onde começar</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm mt-1">O método oferece exatamente o ponto de partida que falta: um plano estruturado e adaptável.</p>
+                    </div>
+                </div>
+                <div class="check-item flex items-start gap-4 p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 reveal reveal-delay-2">
+                    <div class="w-8 h-8 bg-amber-500/10 text-amber-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <i data-lucide="check" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-slate-800 text-sm sm:text-base">Quem busca clareza e confiança para tomar decisões sobre o sono do bebê</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm mt-1">Com um plano em mãos, você deixa de adivinhar e começa a agir com propósito.</p>
+                    </div>
+                </div>
+                <div class="check-item flex items-start gap-4 p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 reveal reveal-delay-3">
+                    <div class="w-8 h-8 bg-emerald-500/10 text-emerald-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <i data-lucide="check" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-slate-800 text-sm sm:text-base">Quem valoriza simplicidade e praticidade no dia a dia</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm mt-1">Nada de teorias complexas. Apenas um método direto, organizado e fácil de colocar em prática.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 sm:py-20 md:py-28 px-4 bg-white overflow-hidden">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="font-headline fluid-section-title font-bold text-slate-900 mb-4 reveal">
+                A diferença de ter um <span class="emotional-gradient">plano</span>
+            </h2>
+            <p class="fluid-body text-slate-600 max-w-xl mx-auto mb-10 sm:mb-14 reveal">
+                Não prometemos noites perfeitas. Prometemos direção. E direção muda tudo.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="reveal blur-reveal">
+                    <div class="w-14 h-14 bg-brandPurple/10 text-brandPurple rounded-2xl flex items-center justify-center mx-auto mb-5">
+                        <i data-lucide="map" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base sm:text-lg mb-2">Ter um plano</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Você sabe o que fazer em cada momento. Não precisa improvisar. Não precisa adivinhar.</p>
+                </div>
+                <div class="reveal blur-reveal reveal-delay-1">
+                    <div class="w-14 h-14 bg-brandPink/10 text-brandPink rounded-2xl flex items-center justify-center mx-auto mb-5">
+                        <i data-lucide="navigation" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base sm:text-lg mb-2">Ter direção</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Cada escolha tem um propósito. Você entende o porquê das coisas e se sente mais segura.</p>
+                </div>
+                <div class="reveal blur-reveal reveal-delay-2">
+                    <div class="w-14 h-14 bg-amber-500/10 text-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                        <i data-lucide="repeat" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base sm:text-lg mb-2">Ter um processo</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">A rotina se torna previsível. O bebê entende os sinais. E você recupera a sensação de controle.</p>
+                </div>
+            </div>
+            <div class="mt-12 sm:mt-16 reveal">
+                <p class="fluid-body text-slate-600 max-w-xl mx-auto leading-relaxed">
+                    Quando você tem um plano, a noite deixa de ser um campo de batalha e se torna uma <span class="emotional-purple">sequência de passos</span> que você conhece. Isso não elimina todos os desafios, mas transforma completamente a forma como você os enfrenta.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="oferta" class="py-16 sm:py-20 md:py-28 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-slate-900 -z-10"></div>
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMiI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50 pointer-events-none"></div>
+
+        <div class="max-w-xl mx-auto text-center relative z-10 reveal">
+            <div class="glass-effect p-6 sm:p-8 md:p-12 rounded-[2rem] sm:rounded-[3rem] shadow-2xl relative overflow-hidden border-2 border-brandPink/40">
+                <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brandPurple via-brandPink to-brandPurple"></div>
+
+                <p class="text-brandPink font-bold text-xs sm:text-sm uppercase tracking-[0.2em] mb-3">Oferta especial</p>
+                <h2 class="font-headline text-2xl sm:text-3xl font-bold text-slate-900 mb-3">
+                    Método <span class="text-brandPink">3 Noites</span>
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base mb-8 sm:mb-10 leading-relaxed max-w-md mx-auto">
+                    Todo o material que você precisa para organizar o sono do seu bebê com <span class="emotional-pink">clareza</span> e <span class="emotional-purple">confiança</span>.
+                </p>
+
+                <div class="text-left mb-8 sm:mb-10 max-w-sm mx-auto">
+                    <h4 class="text-slate-900 font-bold text-xs uppercase tracking-widest mb-4 flex items-center gap-2">
+                        <i data-lucide="list-checks" class="w-4 h-4 text-brandPurple"></i> O que está incluso:
+                    </h4>
+                    <div class="space-y-3 text-slate-700 text-xs sm:text-sm">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-brandPink flex-shrink-0 mt-0.5"></i>
+                            <p><strong class="text-slate-900">Guia Principal</strong> — O método completo com estratégias e passos para hábitos de sono saudáveis</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-brandPink flex-shrink-0 mt-0.5"></i>
+                            <p><strong class="text-slate-900">Guia da Madrugada</strong> — O que fazer nos primeiros minutos após o despertar noturno</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-brandPink flex-shrink-0 mt-0.5"></i>
+                            <p><strong class="text-slate-900">Guia de Nutrição Noturna</strong> — Como a alimentação influencia o sono do bebê</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-brandPink flex-shrink-0 mt-0.5"></i>
+                            <p><strong class="text-slate-900">Checklist do Ambiente Ideal</strong> — Transforme o quarto em ambiente favorável ao descanso</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-brandPink flex-shrink-0 mt-0.5"></i>
+                            <p><strong class="text-slate-900">Planner de Sono do Bebê</strong> — Acompanhe a rotina de forma simples e organizada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/50 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/60 mb-8 sm:mb-10 text-center">
+                    <span class="text-slate-400 line-through text-sm sm:text-base block mb-1">De R$ 97</span>
+                    <div class="text-slate-900 text-4xl sm:text-5xl md:text-6xl font-black mb-2">R$ 38,00</div>
+                    <p class="text-brandPurple font-bold text-xs sm:text-sm uppercase tracking-widest">ou 6x de R$ 7,13</p>
+                    <div class="flex flex-wrap justify-center gap-2 mt-4">
+                        <span class="text-[10px] bg-brandPurple/10 text-brandPurple px-3 py-1 rounded-full font-semibold uppercase">Pagamento único</span>
+                        <span class="text-[10px] bg-brandPink/10 text-brandPink px-3 py-1 rounded-full font-semibold uppercase">Acesso imediato</span>
+                        <span class="text-[10px] bg-emerald-500/10 text-emerald-600 px-3 py-1 rounded-full font-semibold uppercase">Entrega digital</span>
+                    </div>
+                </div>
+
+                <a href="https://pay.hotmart.com/T102675859T?off=kuxbavmx" class="block w-full btn-premium text-white py-5 sm:py-6 rounded-2xl font-bold text-base sm:text-xl uppercase tracking-wider text-center offer-pulse magnetic-btn">
+                    QUERO ACESSAR AGORA
+                </a>
+                <p class="text-slate-600 text-[10px] sm:text-xs mt-5 sm:mt-6 flex items-center justify-center gap-2">
+                    <i data-lucide="lock" class="w-3 h-3 flex-shrink-0"></i> Pagamento 100% Seguro e Protegido
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 sm:py-20 md:py-28 px-4 bg-white overflow-hidden">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="font-headline fluid-section-title font-bold text-slate-900 mb-3 reveal">
+                Hoje você pode continuar tentando <span class="emotional-gradient">sozinho</span>...
+            </h2>
+            <p class="font-headline text-xl sm:text-2xl md:text-3xl font-semibold text-slate-600 mt-4 reveal reveal-delay-1">
+                Ou começar com um <span class="warm-highlight">plano mais claro</span>.
+            </p>
+            <p class="fluid-body text-slate-600 max-w-xl mx-auto mt-6 sm:mt-8 reveal reveal-delay-2">
+                A diferença entre continuar na incerteza e ter uma direção clara pode ser apenas uma decisão. O Método 3 Noites foi criado para ser essa direção.
+            </p>
+            <div class="mt-8 sm:mt-10 reveal reveal-delay-3">
+                <a href="https://pay.hotmart.com/T102675859T?off=kuxbavmx" class="btn-premium text-white px-6 sm:px-10 py-4 sm:py-5 rounded-2xl font-bold fluid-cta uppercase tracking-wide inline-block max-w-full break-words magnetic-btn">
+                    QUERO ACESSAR O MÉTODO 3 NOITES
+                </a>
+            </div>
+            <p class="text-slate-400 text-xs sm:text-sm mt-4 reveal reveal-delay-4">
+                Acesso imediato • Pagamento seguro • Material digital
+            </p>
+        </div>
+    </section>
+
+    <section class="py-16 sm:py-20 md:py-28 px-4 bg-softSlate overflow-hidden">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-headline fluid-section-title text-center text-slate-900 mb-10 sm:mb-12 reveal">Perguntas Frequentes</h2>
+            <div class="space-y-3 sm:space-y-4">
+                <div class="faq-item card-stable-hover p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 reveal">
+                    <details>
+                        <summary class="flex justify-between items-center font-bold text-slate-800 text-sm sm:text-base">
+                            <span>Para qual idade serve o método?</span>
+                            <span class="faq-arrow text-brandPink flex-shrink-0 ml-3">
+                                <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                            </span>
+                        </summary>
+                        <p class="mt-4 text-slate-600 text-sm border-t border-slate-100 pt-4">O método foi desenvolvido para bebês de 0 a 24 meses, com orientações que podem ser adaptadas conforme a idade e o desenvolvimento da criança.</p>
+                    </details>
+                </div>
+                <div class="faq-item card-stable-hover p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 reveal reveal-delay-1">
+                    <details>
+                        <summary class="flex justify-between items-center font-bold text-slate-800 text-sm sm:text-base">
+                            <span>Vou precisar deixar meu bebê chorar?</span>
+                            <span class="faq-arrow text-brandPink flex-shrink-0 ml-3">
+                                <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                            </span>
+                        </summary>
+                        <p class="mt-4 text-slate-600 text-sm border-t border-slate-100 pt-4"><span class="emotional-pink">Não.</span> O Método 3 Noites é baseado em organização e rotina, não em técnicas de extinção do choro. O foco está em criar consistência e previsibilidade.</p>
+                    </details>
+                </div>
+                <div class="faq-item card-stable-hover p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 reveal reveal-delay-2">
+                    <details>
+                        <summary class="flex justify-between items-center font-bold text-slate-800 text-sm sm:text-base">
+                            <span>Como recebo o material?</span>
+                            <span class="faq-arrow text-brandPink flex-shrink-0 ml-3">
+                                <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                            </span>
+                        </summary>
+                        <p class="mt-4 text-slate-600 text-sm border-t border-slate-100 pt-4">Acesso <span class="emotional-purple">imediato</span> por e-mail após a confirmação do pagamento. Todo o conteúdo é digital e pode ser acessado em qualquer dispositivo.</p>
+                    </details>
+                </div>
+                <div class="faq-item card-stable-hover p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 reveal reveal-delay-3">
+                    <details>
+                        <summary class="flex justify-between items-center font-bold text-slate-800 text-sm sm:text-base">
+                            <span>E se eu não gostar do método?</span>
+                            <span class="faq-arrow text-brandPink flex-shrink-0 ml-3">
+                                <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                            </span>
+                        </summary>
+                        <p class="mt-4 text-slate-600 text-sm border-t border-slate-100 pt-4">Você tem 7 dias de garantia. Se o material não fizer sentido para você, basta solicitar o reembolso e devolvemos 100% do valor investido.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 sm:py-20 md:py-24 px-4 bg-slate-950 text-white text-center relative overflow-hidden">
+        <div class="max-w-2xl mx-auto space-y-6 sm:space-y-8 reveal">
+            <h2 class="font-headline text-2xl sm:text-3xl md:text-4xl font-bold">
+                Sua Família Merece <span class="emotional-gradient">Noites Mais Organizadas</span>
+            </h2>
+            <p class="text-slate-400 text-base sm:text-lg max-w-lg mx-auto">
+                A clareza que você precisa para organizar o sono do seu bebê está a um clique de distância.
+            </p>
+            <a href="https://pay.hotmart.com/T102675859T?off=kuxbavmx" class="inline-block bg-white text-slate-900 px-8 sm:px-12 py-4 sm:py-5 rounded-full font-bold text-base sm:text-xl shadow-2xl hover:scale-105 transition-transform uppercase magnetic-btn">
+                QUERO <span class="text-brandPurple">COMEÇAR AGORA</span>
+            </a>
+            <div class="pt-12 sm:pt-16 border-t border-white/10 text-[10px] sm:text-[11px] text-slate-600">
+                <p>© 2026 Método 3 Noites. Todos os direitos reservados.</p>
+                <p class="mt-2">Este é um produto digital. Os resultados dependem da aplicação do método.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="sticky-cta" class="bg-white/90 backdrop-blur-xl border-t border-slate-200 px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+        <div class="max-w-xl mx-auto flex items-center justify-between gap-3">
+            <div class="hidden sm:block">
+                <p class="text-xs text-slate-600">Investimento único</p>
+                <p class="text-sm font-bold text-slate-900">R$ 38,00 <span class="text-brandPurple text-xs font-normal">ou 6x de R$ 7,13</span></p>
+            </div>
+            <a href="https://pay.hotmart.com/T102675859T?off=kuxbavmx" class="flex-1 sm:flex-none btn-premium text-white px-4 sm:px-6 py-3 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wide text-center magnetic-btn">
+                Quero Acessar Agora
+            </a>
+        </div>
+    </div>
+
+    <div id="chat-widget"></div>
+
+    <script>
+        // Scroll Progress Bar
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const progress = (scrollTop / scrollHeight) * 100;
+            document.getElementById('scroll-progress').style.width = progress + '%';
+        });
+
+        // Sticky CTA visibility
+        const stickyCta = document.getElementById('sticky-cta');
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            const heroHeight = document.querySelector('.hero-light').offsetHeight;
+            const offerSection = document.getElementById('oferta');
+            const offerTop = offerSection ? offerSection.offsetTop : Infinity;
+
+            if (currentScroll > heroHeight && currentScroll < offerTop - window.innerHeight) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+        });
+
+        // Magnetic Button Effect
+        document.querySelectorAll('.magnetic-btn').forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = '';
+            });
+        });
+
+        // Subtle parallax for blobs on desktop
+        if (window.innerWidth >= 768) {
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                document.querySelectorAll('.blob').forEach(blob => {
+                    const speed = parseFloat(blob.dataset.speed) || 0.03;
+                    blob.style.transform = `translateY(${scrolled * speed}px)`;
+                });
+            });
+        }
+
+        // Chat Widget
+        class ChatWidget {
+            constructor(containerId) {
+                this.container = document.getElementById(containerId);
+                this.isOpen = false;
+                this.render();
+                this.attachEvents();
+            }
+            render() {
+                this.container.innerHTML = `
+                    <button id="chat-toggle" aria-label="Abrir assistente virtual">
+                        <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    </button>
+                    <div id="chat-box">
+                        <div class="chat-header">
+                            <span>Assistente do Método</span>
+                            <button id="chat-close" style="background:none;border:none;color:white;cursor:pointer;">
+                                <i data-lucide="x" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                        <div class="chat-body" id="chat-messages">
+                            <div class="chat-message assistant">Olá! Como posso ajudar você com o sono do seu bebê?</div>
+                            <div class="chat-suggestions" id="chat-suggestions">
+                                <span class="chat-suggestion" data-msg="Funciona para recém-nascidos?">👶 Recém-nascidos?</span>
+                                <span class="chat-suggestion" data-msg="Precisa deixar chorar?">😢 Choro?</span>
+                                <span class="chat-suggestion" data-msg="Qual o valor?">💳 Preço</span>
+                            </div>
+                        </div>
+                        <div class="chat-input-area">
+                            <input type="text" id="chat-input" placeholder="Digite sua dúvida..." />
+                            <button id="chat-send">
+                                <i data-lucide="send" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                this.box = this.container.querySelector('#chat-box');
+                this.input = this.container.querySelector('#chat-input');
+                this.messagesContainer = this.container.querySelector('#chat-messages');
+                this.suggestions = this.container.querySelector('#chat-suggestions');
+            }
+            attachEvents() {
+                this.container.querySelector('#chat-toggle').addEventListener('click', () => this.toggle());
+                this.container.querySelector('#chat-close').addEventListener('click', () => this.close());
+                this.container.querySelector('#chat-send').addEventListener('click', () => this.sendMessage());
+                this.input.addEventListener('keypress', (e) => { if (e.key === 'Enter') this.sendMessage(); });
+                this.container.querySelectorAll('.chat-suggestion').forEach(s => s.addEventListener('click', () => this.handleUserMessage(s.dataset.msg)));
+            }
+            toggle() { this.isOpen = !this.isOpen; this.box.classList.toggle('open', this.isOpen); if (this.isOpen) this.input.focus(); }
+            close() { this.isOpen = false; this.box.classList.remove('open'); }
+            sendMessage() { const msg = this.input.value.trim(); if (!msg) return; this.handleUserMessage(msg); this.input.value = ''; }
+            handleUserMessage(text) {
+                this.addMessage(text, 'user');
+                if (this.suggestions) this.suggestions.style.display = 'none';
+                setTimeout(() => { const reply = this.getAIResponse(text); this.addMessage(reply, 'assistant'); }, 800);
+            }
+            getAIResponse(message) {
+                const lower = message.toLowerCase();
+                if (lower.includes('recém') || lower.includes('idade')) return "Sim! O método funciona do nascimento aos 24 meses, com orientações adequadas a cada fase.";
+                if (lower.includes('choro') || lower.includes('deixar chorar')) return "Não! O Método 3 Noites é baseado em organização e rotina, sem técnicas de extinção do choro.";
+                if (lower.includes('preço') || lower.includes('valor')) return "Investimento único de R$ 38,00 ou 6x de R$ 7,13, com acesso vitalício e garantia de 7 dias.";
+                return "O Método 3 Noites foi criado para oferecer clareza e direção na organização do sono do bebê. Recomendo conferir a seção de oferta! 😊";
+            }
+            addMessage(text, sender) {
+                const div = document.createElement('div');
+                div.className = `chat-message ${sender}`;
+                div.textContent = text;
+                this.messagesContainer.appendChild(div);
+                this.messagesContainer.scrollTop = this.messagesContainer.scrollHeight;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new ChatWidget('chat-widget');
+            lucide.createIcons();
+
+            // Intersection Observer for reveals
+            const observer = new IntersectionObserver((entries) => { 
+                entries.forEach(entry => { 
+                    if (entry.isIntersecting) entry.target.classList.add('visible'); 
+                }); 
+            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+            document.querySelectorAll('.reveal, .blur-reveal').forEach(el => observer.observe(el));
+
+            // FAQ accordion
+            document.querySelectorAll('.faq-item details').forEach(details => {
+                details.addEventListener('toggle', () => { 
+                    if (details.open) {
+                        document.querySelectorAll('.faq-item details').forEach(other => { 
+                            if (other !== details) other.open = false; 
+                        });
+                        setTimeout(() => lucide.createIcons(), 50);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
